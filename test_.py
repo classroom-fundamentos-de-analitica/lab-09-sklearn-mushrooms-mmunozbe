@@ -56,7 +56,8 @@ def test_():
     accuracy_train, accuracy_test = eval_metrics(
         y_true_train, y_pred_train
     ), eval_metrics(y_true_test, y_pred_test)
-
+    print(f"Train accuracy: {accuracy_train}")
+    print(f"Test accuracy: {accuracy_test}")
     assert accuracy_train > 0.99
     assert accuracy_test > 0.99
 
