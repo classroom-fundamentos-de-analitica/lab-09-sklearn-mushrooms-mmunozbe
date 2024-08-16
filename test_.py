@@ -50,7 +50,7 @@ def compute_metrics():
     assert estimator is not None, "Model not found"
 
 
-def test_():
+def test_(accuracy_train, accuracy_test):
     """Run grading script."""
     assert accuracy_train > 0.99
     assert accuracy_test > 0.99
@@ -66,4 +66,4 @@ if __name__ == "__main__":
     accuracy_train = eval_metrics(y_true_train, y_pred_train)
     accuracy_test = eval_metrics(y_true_test, y_pred_test)
 
-    test_()
+    test_(accuracy_train, accuracy_test)
